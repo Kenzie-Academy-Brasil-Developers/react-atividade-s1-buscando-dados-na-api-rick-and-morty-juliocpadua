@@ -1,3 +1,17 @@
+body::-webkit-scrollbar {
+  width: 4px;              
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:  greenyellow;    
+  border-radius: 20px;       
+  border: 3px solid greenyellow;  
+}
+
 body {
   background-image: url("./rick.png");
 }
@@ -21,4 +35,58 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.button__pages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__pages--back--next {
+  background-color: transparent;
+  border: 0.3px solid greenyellow;
+  border-radius: 10px;
+  color: white;
+
+  width: 130px;
+  cursor: pointer;
+}
+
+.button__pages--back--next:hover,
+.page {
+  -webkit-box-shadow: 2px 2px 4px 1px greenyellow;
+  -moz-box-shadow: 2px 2px 4px 1px greenyellow;
+  box-shadow: 2px 2px 4px 1px greenyellow;
+}
+
+.image__run {
+  width: 180px;
+  height: 100px;
+}
+
+#inverter {
+  transform: scaleX(-1);
+}
+
+.button__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page {
+  color: white;
+
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0.3px solid greenyellow;
+  border-radius: 100px;
 }
